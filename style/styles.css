@@ -1,0 +1,72 @@
+main {
+    width: 100%;
+    height: 640px;
+    background: rgb(32,121,9);
+    background: linear-gradient(0deg, rgba(32,121,9,1) 11%, rgba(73,255,5,1) 22%, rgba(65,255,84,1) 32%, rgba(65,255,250,1) 64%, rgba(255,255,255,1) 93%);
+    background-image: url(https://i.pinimg.com/564x/b0/d4/ae/b0d4ae29e40cef8b0d9c91f3c875855d.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.jerry {
+    height: 160px;
+    animation: jerry 6s infinite;
+    transition-timing-function: ease;
+    position: absolute;
+    top: 197px;
+    left: 700px;
+}
+
+@keyframes jerry {
+    0% { top:197px;}
+    25% { left: 600px; top: 300px;}
+    50% { top: 400px;}
+    75% { left: 400px; top: 460px;}
+    100% { top:197px;}
+}
+
+.up {
+    height: 250px;
+    position: absolute;
+    top: 352px;
+    left: 1000px;
+    animation: up 7s steps(10, end) 2s infinite;
+}
+
+@keyframes up {
+    0% { top: 352px}
+    50% {top: 30px}
+    100% { top: 352px}
+}
+
+.myluv {
+    height: 90px;
+    position: absolute;
+    top: 370px;
+    left: 760px;
+    animation: myluv 6s ease 1;
+}
+
+@keyframes myluv {
+    from { top: 125px;}
+    10% { top: 140px; left: 860px;}
+    90% { top: 400px; left: 850px;}
+    to { top: 400px; left: 760px;}
+}
+
+
+.myprincess {
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    animation: myprincess 8s linear infinite 0.5s alternate;
+}
+
+@keyframes myprincess {
+    from { top: 50px;}
+    50% { top: 50px; left: 850px};
+    to { top: 50px};
+}
+
