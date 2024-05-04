@@ -46,10 +46,11 @@ main {
     top: 370px;
     left: 760px;
     animation: myluv 6s ease 1;
+    animation-delay: 1s;
 }
 
 @keyframes myluv {
-    from { top: 125px;}
+    from { top: 125px; left: 860px;}
     10% { top: 140px; left: 860px;}
     90% { top: 400px; left: 850px;}
     to { top: 400px; left: 760px;}
@@ -61,14 +62,13 @@ main {
     position: absolute;
     top: 50px;
     left: 50px;
-    animation: myprincess 8s linear infinite 0.5s alternate;
+    animation: myprincess 8s linear infinite 0.5s;
 }
 
 @keyframes myprincess {
     from { top: 50px;}
-    49% { transform: scaleX(0)};
-    50% { top: 50px; left: 850px;  transform: scaleX(-1)};
-    51% { transform: scaleX(0)};
-    to { top: 50px};
+    49% {transform: scaleX(1);}
+    50% { top: 50px; left: 850px; transform: scaleX(-1);}
+    to { top: 50px; transform: scaleX(-1); };
 }
 
